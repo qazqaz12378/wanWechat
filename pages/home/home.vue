@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<u-swiper :list="list" name="imagePath" height="35px" img-mode="aspectFit"></u-swiper>
+		<u-swiper :list="list" name="imagePath" height="35px" img-mode="aspectFit" @click="click"></u-swiper>
 	</view>
 </template>
 
@@ -28,7 +28,9 @@
 			});
 		},
 		methods: {
-			
+			click(index) {
+				console.log(index)
+			}
 		}
 	}
 </script>
