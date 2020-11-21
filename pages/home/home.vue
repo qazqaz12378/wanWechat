@@ -29,7 +29,10 @@
 		},
 		methods: {
 			click(index) {
-				console.log(index)
+				var url =this.list[index]['url']
+				uni.navigateTo({
+					url:"../webview/webview?url="+url
+				})
 			}
 		}
 	}
